@@ -25,6 +25,9 @@ Rails.application.configure do
     config.action_controller.perform_caching = false
   end
 
+  # CSRF origin 허용 목록 추가
+  config.action_controller.forgery_protection_origin_check = false
+
   # Change to :null_store to avoid any caching.
   config.cache_store = :memory_store
 
